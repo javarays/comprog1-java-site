@@ -37,10 +37,15 @@ nav.navbar {
     text-decoration: none;
     padding: 20px;
     display: inline-block;
+    transition: transform 0.4s;
 }
 .navbar a:hover{
-    color: #c13584; 
+    color: #c13584;
+    transform: translateY(-6px);
+    filter: drop-shadow(0px 0px 5px #c13584);
+    transition: transform 0.2s;
 }
+
 .navbar li{
     float: left;
     font-family: 'Roboto', sans-serif;
@@ -48,17 +53,13 @@ nav.navbar {
     font-style: normal;
 }
 
-.navbar li:hover {
-    filter: drop-shadow(0px 0px 5px #c13584);
-}
-
 #logo {
     position: inherit;
-    display: block;
     background-color: black;
-    justify-self: center;
-    right: 0;
-    width: 20%;
+    margin-left: 321px;
+    width: 10%;
+    border-radius: 8px;
+    filter: grayscale(100%);
 }
 
 #sideImage {
